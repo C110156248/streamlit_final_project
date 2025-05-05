@@ -12,11 +12,16 @@ from bs4 import BeautifulSoup
 import re
 from dotenv import load_dotenv
 import traceback
-# 載入環境變數
-load_dotenv()
-
+def get_api_key():
+    try:
+        # 嘗試從 st.secrets 取得 API 金鑰（在部署環境中）
+        return st.secrets["GOOGLE_API_KEY"]
+    except:
+        # 如果在本地開發環境中，從環境變數獲取
+        import os
+        return os.getenv("GOOGLE_API_KEY")
 # 設定 Google API 金鑰
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = get_api_key()
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # 初始化 Gemini 模型和 embedding 模型
