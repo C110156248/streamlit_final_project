@@ -1,0 +1,18 @@
+streamlit>=1.44.0
+google-generativeai>=0.7.0
+langchain>=0.1.0
+langchain-google-genai>=0.1.0
+langchain-community>=0.0.16
+faiss-cpu>=1.7.4
+pypdf>=3.15.0
+googlesearch-python>=1.2.3
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+# 處理文字文件和 Markdown 文件
+# Handling Text Files and Markdown Files
+chardet>=5.0.0
+# 如果需要支援 Markdown 文件解析
+# If You Need Support for Markdown File Parsing
+# markdown>=3.4.0
+# unstructured>=0.4.16
