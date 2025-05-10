@@ -26,7 +26,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 
 # 初始化 Gemini 模型和 embedding 模型
 def init_models():
-    generation_model = genai.GenerativeModel('gemini-1.5-pro')
+    generation_model = genai.GenerativeModel('gemini-1.5-flash-8b')
     embedding_model = GoogleGenerativeAIEmbeddings(
         model="models/embedding-001",
         google_api_key=GOOGLE_API_KEY
