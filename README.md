@@ -6,7 +6,7 @@ RAG 知識問答助手是一個基於 Retrieval-Augmented Generation (檢索增�
 
 1. 解讀使用者上傳的文件（PDF、TXT、MD 格式）並回答相關問題
 2. 在無法從文件中找到答案時，轉向網路搜尋獲取資訊
-3. 利用 Google Gemini 1.5 Pro 大型語言模型生成高品質回答
+3. 利用 gemini-1.5-flash 大型語言模型生成高品質回答
 
 ## 功能亮點
 
