@@ -4,6 +4,8 @@
 
 RAG 知識問答助手是一個基於 Retrieval-Augmented Generation (檢索增強生成) 技術的智能問答系統，透過 Streamlit 提供友好的網頁界面。此助手能夠：
 
+![螢幕擷取畫面 2025-06-03 164943](https://github.com/user-attachments/assets/701617f9-8fc0-43e8-9f25-8370ea1741e8)
+
 1. 解讀使用者上傳的文件（PDF、TXT、MD 格式）並回答相關問題
 2. 在無法從文件中找到答案時，轉向網路搜尋獲取資訊
 3. 利用 gemini-1.5-flash 大型語言模型生成高品質回答
